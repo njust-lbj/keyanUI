@@ -45,7 +45,7 @@
                             $(this).children(".submenu").siblings("a").removeClass("submenu-indicator-minus")
                         }
                     }
-                    window.location.href = $(this).children("a").attr("href")
+                    window.parent.right.location.href=$(this).children("a").attr("href")
                 })
         },
         submenuIndicators: function () {
@@ -53,31 +53,6 @@
                 $(this.element).find(".submenu").siblings("a").append("<span class='submenu-indicator'>+</span>")
             }
         },
-        addClickEffect: function () {
-            var ink, d, x, y;
-            $(this.element).find("a").bind("click touchstart",
-                function (e) {
-                    $(".ink").remove();
-                    if ($(this).children(".ink").length === 0) {
-                        $(this).prepend("<span class='ink'></span>")
-                    }
-                    ink = $(this).find(".ink");
-                    ink.removeClass("animate-ink");
-                    if (!ink.height() && !ink.width()) {
-                        d = Math.max($(this).outerWidth(), $(this).outerHeight());
-                        ink.css({
-                            height: d,
-                            width: d
-                        })
-                    }
-                    x = e.pageX - $(this).offset().left - ink.width() / 2;
-                    y = e.pageY - $(this).offset().top - ink.height() / 2;
-                    ink.css({
-                        top: y + 'px',
-                        left: x + 'px'
-                    }).addClass("animate-ink")
-                })
-        }
     });
     $.fn[pluginName] = function (options) {
         this.each(function () {
