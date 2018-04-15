@@ -53,7 +53,7 @@
 </div>
 <div class="divcss1">
 <div class="divcss5">
-    <p><a href="#"><img src="pictures/india.jpg" class="divcss6" alt="印度" width=auto; hight=auto; style="border-radius:10%;"/></a>
+    <p><a href="views/main_Indian.jsp"><img src="pictures/india.jpg" class="divcss6" alt="印度" width=auto; hight=auto; style="border-radius:10%;"/></a>
         <a href="views/main_Japan.jsp"><img src="pictures/japan.jpg" class="divcss6" alt="日本" width=auto; hight=auto; style="border-radius:10%; margin-left:10%"/></a></p>
 </div>
 </div>

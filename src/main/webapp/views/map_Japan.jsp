@@ -45,18 +45,17 @@
             //center 属性指示 API 将地图的中心定在何处。
             //zoom 属性指定地图的缩放比例。 Zoom：0 是最低缩放比例，显示整个地球。 将缩放值设置得更高可以更高分辨率放大地球。
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 7,
+                zoom: 6.5,
                 center: {lat: 36.70, lng: 138.96},
-                minZoom: 6
+                minZoom: 5.5
             });
-            $.getJSON("../json/japan.json", function (data) {
+            $.getJSON("../json/Japan.json", function (data) {
                 $.each(data, function (i) {
                     var Position = {lat: data[i].Lat, lng: data[i].Lng};
                     var marker = new google.maps.Marker({
                         //position 属性设置标记的位置。
                         position: Position,
                         map: map,
-                        name: data[i].Name
                     });
                     var contentString = "<div style='text-align:center;font-size:16px;'><strong>" + data[i].Name +"</strong></div>"
                                         +"<div>位置：&nbsp纬度:"+ decimal4(data[i].Lat) + "°&nbsp&nbsp&nbsp&nbsp&nbsp经度:" + decimal4(data[i].Lng) +"°</div>"
@@ -69,7 +68,6 @@
 
                     marker.addListener('click', function () {
                         infowindow.open(map, marker);
-                        map.setZoom(7);
                         map.setCenter(marker.getPosition());
                     });
                 });
