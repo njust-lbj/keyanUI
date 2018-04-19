@@ -12,6 +12,7 @@
     <meta http-equiv="Content-Type" charset="utf-8">
     <script src="../js/jquery-3.2.1.js" type="text/javascript"></script>
     <link href="../css/jquery-accordion-menu.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css"/>
     <script src="../js/jquery-accordion-menu.js" type="text/javascript"></script>
     <title>google earth test</title>
     <style type="text/css">
