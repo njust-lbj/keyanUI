@@ -91,19 +91,19 @@
     <div id="jquery-accordion-menu" class="jquery-accordion-menu">
         <div class="jquery-accordion-menu-header"></div>
         <ul id="demo-list">
-            <li class="active"><a href="map_Japan.jsp"><i class="fa fa-home"></i>电力系统基础信息采集</a>
+            <li class="active"><a href="map_Indian.jsp"><i class="fa fa-home"></i>电力系统基础信息采集</a>
                 <ul class="submenu">
                     <li><a href="test1.jsp" target="right">深层网络与聚焦网络爬虫</a></li>
                     <li><a href="test2.jsp" target="right">数据时空自动采集分析 </a></li>
                     <li><a href="test1.jsp" target="right">基于深度神经网络的语义分析</a></li>
                 </ul>
             </li>
-            <li><a href="map_Japan.jsp"><i class="fa fa-glass"></i>基于图像的目标识别</a>
+            <li><a href="map_Indian.jsp"><i class="fa fa-glass"></i>基于图像的目标识别</a>
                 <ul class="submenu">
                     <li><a href="test1.jsp" target="right">目标特征识别</a></li>
                 </ul>
             </li>
-            <li><a href="map_Japan.jsp"><i class="fa fa-file-image-o"></i>电力系统网络拓扑</a>
+            <li><a href="map_Indian.jsp"><i class="fa fa-file-image-o"></i>电力系统网络拓扑</a>
                 <ul class="submenu">
                     <li><a href="test1.jsp" target="right">地区电网的地理接线图</a></li>
                     <li><a href="test1.jsp" target="right">发电机数据</a></li>
@@ -112,7 +112,7 @@
                     <li><a href="test1.jsp" target="right">负荷数据</a></li>
                 </ul>
             </li>
-            <li><a href="map_Japan.jsp"><i class="fa fa-cog"></i>电力系统评价模型</a>
+            <li><a href="map_Indian.jsp"><i class="fa fa-cog"></i>电力系统评价模型</a>
                 <ul class="submenu">
                     <li><a href="test1.jsp" target="right">打击目标影响因素分析</a></li>
                     <li><a href="test1.jsp" target="right">目标决策评估指标体系</a></li>
