@@ -5,7 +5,7 @@
          version="3.1">
     <display-name>UI</display-name>
     <welcome-file-list>
-        <welcome-file>welcome.jsp</welcome-file>
+        <welcome-file>welcome0.jsp</welcome-file>
     </welcome-file-list>
 
     <!-- spring配置文件名称与位置 -->
