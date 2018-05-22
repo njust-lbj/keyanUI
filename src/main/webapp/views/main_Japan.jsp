@@ -114,8 +114,8 @@
             </li>
             <li><a href="map_Japan.jsp"><i class="fa fa-cog"></i>电力系统评价模型</a>
                 <ul class="submenu">
-                    <li><a href="crawler4_1.html" target="right">打击目标影响因素分析</a></li>
-                    <li><a href="crawler4_2.html" target="right">目标决策评估指标体系</a></li>
+                    <li><a href="crawler4_1.jsp" target="right">打击目标影响因素分析</a></li>
+                    <li><a href="crawler4_2.jsp" target="right">目标决策评估指标体系</a></li>
                     <li><a href="test1.jsp" target="right">打击目标决策问题建模</a></li>
                 </ul>
             </li>

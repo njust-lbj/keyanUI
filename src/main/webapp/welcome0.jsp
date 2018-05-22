@@ -83,7 +83,7 @@
 </head>
 <body>
     <div class="backgroud"><img src="pictures/background.jpeg" width="100%" height="100%"/></div>
-    <div class="p1"><a href="views/main_Indian.jsp"><img id="pick1" src="pictures/ship.jpeg" width="90%" height="80%"/><t1>船舰动态监测</t1></a></div>
+    <div class="p1"><a href="views/main_ship.jsp"><img id="pick1" src="pictures/ship.jpeg" width="90%" height="80%"/><t1>船舰动态监测</t1></a></div>
     <div class="p2"><a href="views/welcome.jsp"><img id="pick2" src="pictures/fdc.jpg" width="90%" height="80%"/><t2>电力系统监测</t2></a></div>
 </body>
 </html>
