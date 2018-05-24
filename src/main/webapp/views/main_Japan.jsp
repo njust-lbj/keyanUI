@@ -105,11 +105,11 @@
             </li>
             <li><a href="map_Japan.jsp"><i class="fa fa-file-image-o"></i>电力系统网络拓扑</a>
                 <ul class="submenu">
-                    <li><a href="test1.jsp" target="right">地区电网的地理接线图</a></li>
-                    <li><a href="test1.jsp" target="right">发电机数据</a></li>
-                    <li><a href="test1.jsp" target="right">变压器数据</a></li>
-                    <li><a href="test1.jsp" target="right">线路数据</a></li>
-                    <li><a href="test1.jsp" target="right">负荷数据</a></li>
+                    <li><a href="Data_Japan.jsp" target="right">地区电网的地理接线图</a></li>
+                    <li><a href="Data_Japan.jsp" target="right">发电机数据</a></li>
+                    <li><a href="Data_Japan.jsp" target="right">变压器数据</a></li>
+                    <li><a href="Data_Japan.jsp" target="right">线路数据</a></li>
+                    <li><a href="Data_Japan.jsp" target="right">负荷数据</a></li>
                 </ul>
             </li>
             <li><a href="map_Japan.jsp"><i class="fa fa-cog"></i>电力系统评价模型</a>
