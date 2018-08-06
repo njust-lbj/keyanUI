@@ -19,6 +19,16 @@
     #allmap {height:600px; width: 70%;float:left;margin:20px 10px 10px 10px}
     #control{width:100%;}
 </style>
+<script src="../js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script language='javascript' type='text/javascript'>
+    $(function () {
+        $('#n1').delay(0).hide(0);
+        setTimeout(function () {
+            $('#n1').show();
+        }, 5000);
+    })
+</script>
+
 
 <body>
     <div class="location" id="div1" style="height: 50px">
@@ -36,7 +46,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr id="n1">
                     <td>http://finance.ifeng.com/a/20171025/15744970_0.shtml</td>
                     <td>印海军将全天候巡航印度洋 并在交通要道部署舰船</td>
                 </tr>
@@ -79,6 +89,5 @@
             </tbody>
         </table>
     </div>
-
 </body>
 </html>
