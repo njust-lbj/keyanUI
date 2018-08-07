@@ -120,19 +120,19 @@
     <script src="../js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/progress.js" type="text/javascript" charset="utf-8"></script>
 
-    <a href="#"><button type="button" class="btn btn-primary" id="btn-reset1">
+    <a href="crawler_2.jsp"><button type="button" class="btn btn-primary" id="btn-reset1">
         <i class="glyphicon glyphicon-re"></i>
         URL集导入
     </button></a>
-    <a href="#"><button type="button" class="btn btn-primary" id="btn-reset2">
+    <a href="crawler_3.jsp"><button type="button" class="btn btn-primary" id="btn-reset2">
         <i class="glyphicon glyphicon-re"></i>
         关键字集
     </button></a>
-    <a href="#"><button type="button" class="btn btn-primary" id="btn-reset3">
+    <a href="crawler_4.jsp"><button type="button" class="btn btn-primary" id="btn-reset3">
         <i class="glyphicon glyphicon-re"></i>
         参数值设置
     </button></a>
-    <a href="#"><button type="button" class="btn btn-primary" id="btn-reset4">
+    <a href="crawler_5.jsp"><button type="button" class="btn btn-primary" id="btn-reset4">
         <i class="glyphicon glyphicon-re"></i>
         爬取图展示
     </button></a>
