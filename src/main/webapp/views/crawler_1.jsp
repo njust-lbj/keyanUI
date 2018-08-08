@@ -40,8 +40,8 @@
         margin-bottom: 0;
     }
     .starter-template {
-        left:63%;
-        top:22.5%;
+        left:68%;
+        top:25.5%;
         position: absolute;
         text-align: center;
     }
@@ -52,13 +52,13 @@
     }
     #text2{
         font-size:35px;
-        top: 15%;
-        left: 63%;
+        top: 18%;
+        left: 68%;
         position:absolute;
     }
     #btn-reset {
-        top: 24%;
-        left: 83%;
+        top: 27%;
+        left: 88%;
         position:absolute;
     }
     #div2{
@@ -72,7 +72,7 @@
         text-align: left;
         font-size:8px;
         top: 5.5%;
-        left: 58%;
+        left: 63%;
         position:absolute;
     }
     #btn-reset2{
@@ -81,7 +81,7 @@
         text-align: center;
         font-size:5px;
         top: 5.5%;
-        left: 68%;
+        left: 73%;
         position:absolute;
     }
     #btn-reset3{
@@ -90,7 +90,7 @@
         text-align: center;
         font-size:8px;
         top: 5.5%;
-        left: 78%;
+        left: 83%;
         position:absolute;
     }
     #btn-reset4{
@@ -99,7 +99,7 @@
         text-align: center;
         font-size:8px;
         top: 5.5%;
-        left: 88%;
+        left: 93%;
         position:absolute;
     }
 </style>
