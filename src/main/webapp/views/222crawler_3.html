@@ -394,8 +394,38 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
+
 <div class="main_wrap">
     <div class="location"><p>首页 > 电力评价模型 > 打击目标影响因素分析</p></div>
+    <!--插入-->
+
+    <table align="center">
+        <tr>
+            <td>
+                <Input type="button" value="选择电厂" onclick="begin(this);"/>
+            </td>
+            <td>
+                <select name="degree" width="300" id="degree" onchange="jumpMenu(this)">
+                    <option value="222crawler_3.html">日本东京电力</option>
+                    <option value="111crawler_3.html" selected="selected">关西电力</option>
+                    <option value="333crawler_3.html" >九州电力</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    </divform>
+    <script type="text/javascript">
+        /*
+            使用onchange="jumpMenu()" 触发jumpMenu()方法
+        */
+        function jumpMenu(e){
+            window.location.href = e.value;//使用js执行跳转（window.location.href）
+        }
+    </script>
+    <!--完-->
+
+
+
 
 
     <form id="form1" align="center" name="form1" method="post" action="">
@@ -412,25 +442,25 @@
                 <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox2" value="checkbox" /></td>
                 <td bgcolor="#FFFFFF">发电量</td>
 
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
+                <td bgcolor="#FFFFFF">3</td>
+                <td bgcolor="#FFFFFF">3</td>
+                <td bgcolor="#FFFFFF">9</td>
             </tr>
             <tr>
                 <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox22" value="checkbox" /></td>
                 <td bgcolor="#FFFFFF">辐射范围</td>
 
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
+                <td bgcolor="#FFFFFF">5</td>
+                <td bgcolor="#FFFFFF">1</td>
+                <td bgcolor="#FFFFFF">5</td>
             </tr>
             <tr>
                 <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox22" value="checkbox" /></td>
                 <td bgcolor="#FFFFFF">用途</td>
 
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
+                <td bgcolor="#FFFFFF">5</td>
+                <td bgcolor="#FFFFFF">3</td>
+                <td bgcolor="#FFFFFF">15</td>
             </tr>
         </table>
 
@@ -455,25 +485,25 @@
                 <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox2" value="checkbox" /></td>
                 <td bgcolor="#FFFFFF">输电量</td>
 
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
+                <td bgcolor="#FFFFFF">3</td>
+                <td bgcolor="#FFFFFF">2</td>
+                <td bgcolor="#FFFFFF">6</td>
             </tr>
             <tr>
                 <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox22" value="checkbox" /></td>
                 <td bgcolor="#FFFFFF">辐射范围</td>
 
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
+                <td bgcolor="#FFFFFF">3</td>
+                <td bgcolor="#FFFFFF">1</td>
+                <td bgcolor="#FFFFFF">3</td>
             </tr>
             <tr>
                 <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox22" value="checkbox" /></td>
                 <td bgcolor="#FFFFFF">用途</td>
 
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
+                <td bgcolor="#FFFFFF">5</td>
+                <td bgcolor="#FFFFFF">2</td>
+                <td bgcolor="#FFFFFF">10</td>
             </tr>
         </table>
 
@@ -497,25 +527,25 @@
                 <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox2" value="checkbox" /></td>
                 <td bgcolor="#FFFFFF">配电量</td>
 
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
+                <td bgcolor="#FFFFFF">3</td>
+                <td bgcolor="#FFFFFF">5</td>
+                <td bgcolor="#FFFFFF">15</td>
             </tr>
             <tr>
                 <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox22" value="checkbox" /></td>
                 <td bgcolor="#FFFFFF">辐射范围</td>
 
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
+                <td bgcolor="#FFFFFF">4</td>
+                <td bgcolor="#FFFFFF">3</td>
+                <td bgcolor="#FFFFFF">12</td>
             </tr>
             <tr>
                 <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox22" value="checkbox" /></td>
                 <td bgcolor="#FFFFFF">用途</td>
 
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
-                <td bgcolor="#FFFFFF">0</td>
+                <td bgcolor="#FFFFFF">5</td>
+                <td bgcolor="#FFFFFF">5</td>
+                <td bgcolor="#FFFFFF">25</td>
             </tr>
         </table>
 
@@ -536,7 +566,7 @@
 
 
     </script>
-</div>
+</>
 <!-- jQuery -->
 <script src="../js/jquery.min.js"></script>
 <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>

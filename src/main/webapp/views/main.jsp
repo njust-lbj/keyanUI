@@ -18,14 +18,14 @@
     	<div class=" clearfix">
             <div class="choice_list clearfix">
                 <div class="col-md-4 col-sm-4 col-xs-12">
-                    <label class="col-sm-3 control-label text-right" for="name">飞机类型</label>
+                    <label class="col-sm-3 control-label text-right" for="name">类型</label>
                     <div class="col-sm-9">
                         <select class="form-control">
-                          <option>航测机</option>
-                          <option>气象机</option>
-                          <option>公务机</option>
-                          <option>医疗救护机</option>
-                          <option>森林防护机</option>
+                          <option>军舰</option>
+                          <option>民用船</option>
+                          <option>工程用船</option>
+                          <option>渔船</option>
+                          <%--<option>森林防护机</option>--%>
                          </select>
                      </div>
                 </div>
@@ -99,8 +99,8 @@
     
     <div class="main_content">
     	<ul id="myTab" class="nav nav-tabs clearfix">
-        	<li class="active"><a href="#myTabDrop1" data-toggle="tab">飞机活动预测</a></li>
-            <li><a href="#myTabDrop2" data-toggle="tab">展飞活动预测</a></li>
+        	<li class="active"><a href="#myTabDrop1" data-toggle="tab">舰船活动预测</a></li>
+            <li><a href="#myTabDrop2" data-toggle="tab">活动预测</a></li>
             <li><a href="#myTabDrop3" data-toggle="tab">敌军行动预测活</a></li>
             <li><a href="#myTabDrop4" data-toggle="tab">敌军轨迹预测行动</a></li>
 

@@ -62,6 +62,7 @@ public class pyControl{
         if(results.length >=2) {
             session.setAttribute("type", results[0]);
             session.setAttribute("rate", results[1]);
+            session.setAttribute("tag", "1");
         }
         else{
             //exeCmd("sh /Users/zhangyuxuan/Desktop/recog.sh");

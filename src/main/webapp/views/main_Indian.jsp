@@ -93,19 +93,19 @@
         <ul id="demo-list">
             <li class="active"><a href="map_Indian.jsp"><i class="fa fa-home"></i>电力系统基础信息采集</a>
                 <ul class="submenu">
-                    <li><a href="test1.jsp" target="right">深层网络与聚焦网络爬虫</a></li>
+                    <li><a href="testIndian.jsp" target="right">深层网络与聚焦网络爬虫</a></li>
                     <%--<li><a href="test2.jsp" target="right">数据时空自动采集分析 </a></li>--%>
-                    <%--<li><a href="test1.jsp" target="right">基于深度神经网络的语义分析</a></li>--%>
+                    <li><a href="nlp.html" target="right">基于深度神经网络的语义分析</a></li>
                 </ul>
             </li>
             <li><a href="map_Indian.jsp"><i class="fa fa-glass"></i>基于图像的目标识别</a>
                 <ul class="submenu">
-                    <li><a href="retrieval1.html" target="right">目标特征识别</a></li>
+                    <li><a href="../Irecog.do" target="right">目标特征识别</a></li>
                 </ul>
             </li>
             <li><a href="map_Indian.jsp"><i class="fa fa-file-image-o"></i>电力系统网络拓扑</a>
                 <ul class="submenu">
-                    <li><a href="Data_Indian.jsp" target="right">地区电网的地理接线图</a></li>
+                    <li><a href="indian_tp.jsp" target="right">地区电网的地理接线图</a></li>
                     <li><a href="Data_Indian.jsp" target="right">发电机数据</a></li>
                     <li><a href="Data_Indian.jsp" target="right">变压器数据</a></li>
                     <li><a href="Data_Indian.jsp" target="right">线路数据</a></li>
@@ -114,7 +114,7 @@
             </li>
             <li><a href="map_Indian.jsp"><i class="fa fa-cog"></i>电力系统评价模型</a>
                 <ul class="submenu">
-                    <li><a href="222crawler_3.html" target="right">打击目标影响因素分析</a></li>
+                    <li><a href="Indian_exp1.html" target="right">打击目标影响因素分析</a></li>
 
                     <li><a href="test.html" target="right">打击目标决策问题建模</a></li>
                 </ul>
@@ -125,7 +125,7 @@
     </div>
 </div>
 <div id="page">
-    <iframe scrolling="no" frameborder="0" src="map_Indian.jsp" name="right" width="100%" height="100%"></iframe>
+    <iframe frameborder="0" src="map_Indian.jsp" name="right" width="100%" height="100%"></iframe>
 </div>
 </body>
 </html>

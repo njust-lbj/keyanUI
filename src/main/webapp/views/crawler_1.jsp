@@ -28,10 +28,10 @@
         padding: 0;
     }
     #container2{
-        height: 230px;
-        width: 680px;
+        height: 210px;
+        width: 650px;
         left:2%;
-        top:4%;
+        top:2%;
         position: relative;
     }
     #clock{
@@ -40,8 +40,8 @@
         margin-bottom: 0;
     }
     .starter-template {
-        left:68%;
-        top:25.5%;
+        left:66%;
+        top:20%;
         position: absolute;
         text-align: center;
     }
@@ -51,13 +51,13 @@
         margin-right: auto;
     }
     #text2{
-        font-size:35px;
-        top: 18%;
-        left: 68%;
+        font-size:30px;
+        top: 12%;
+        left: 66%;
         position:absolute;
     }
     #btn-reset {
-        top: 27%;
+        top: 22%;
         left: 88%;
         position:absolute;
     }
@@ -65,42 +65,6 @@
         top:10%;
         left:0%;
         position: relative;
-    }
-    #btn-reset1{
-        width:80px;
-        height:38px;
-        text-align: left;
-        font-size:8px;
-        top: 5.5%;
-        left: 63%;
-        position:absolute;
-    }
-    #btn-reset2{
-        width:80px;
-        height:38px;
-        text-align: center;
-        font-size:5px;
-        top: 5.5%;
-        left: 73%;
-        position:absolute;
-    }
-    #btn-reset3{
-        width:80px;
-        height:38px;
-        text-align: center;
-        font-size:8px;
-        top: 5.5%;
-        left: 83%;
-        position:absolute;
-    }
-    #btn-reset4{
-        width:80px;
-        height:38px;
-        text-align: center;
-        font-size:8px;
-        top: 5.5%;
-        left: 93%;
-        position:absolute;
     }
 </style>
 
@@ -119,23 +83,6 @@
     </div>
     <script src="../js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/progress.js" type="text/javascript" charset="utf-8"></script>
-
-    <a href="crawler_2.jsp"><button type="button" class="btn btn-primary" id="btn-reset1">
-        <i class="glyphicon glyphicon-re"></i>
-        URL集导入
-    </button></a>
-    <a href="crawler_3.jsp"><button type="button" class="btn btn-primary" id="btn-reset2">
-        <i class="glyphicon glyphicon-re"></i>
-        关键字集
-    </button></a>
-    <a href="crawler_4.jsp"><button type="button" class="btn btn-primary" id="btn-reset3">
-        <i class="glyphicon glyphicon-re"></i>
-        参数值设置
-    </button></a>
-    <a href="crawler_5.jsp"><button type="button" class="btn btn-primary" id="btn-reset4">
-        <i class="glyphicon glyphicon-re"></i>
-        爬取图展示
-    </button></a>
 
     <div id="text2"><p>下轮爬取倒计时</p></div>
     <div class="zzsc-container">

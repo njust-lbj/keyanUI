@@ -35,18 +35,41 @@
       <div id="sidebar-menu" class="pull-left main_menu_side hidden-print main_menu">
           <div class="menu_section ">
               <ul class="nav side-menu" style="">
-                  <li class="active"><a> 聚焦网络爬虫 <span class="fa fa-chevron-right"></span></a>
+                  <li class="active"><a> 舰船时空数据自动采集 <span class="fa fa-chevron-right"></span></a>
                       <ul class="nav child_menu"  style="display:block;">
-                        <li><a href="crawler_1.jsp" target="frame1">新闻集导入</a></li>
-                        <li><a href="crawler_2.jsp" target="frame1">URL集导入</a></li>
-                        <li><a href="crawler_3.jsp" target="frame1">主题关键字集定义</a></li>
-                        <li><a href="crawler_4.jsp" target="frame1">参数值设置</a></li>
-                        <li><a href="crawler_5.jsp" target="frame1">爬取图片展示</a></li>
+                        <%--<li><a href="crawler_1.jsp" target="frame1">新闻集导入</a></li>--%>
+                        <%--<li><a href="crawler_2.jsp" target="frame1">URL集导入</a></li>--%>
+                        <%--<li><a href="crawler_3.jsp" target="frame1">主题关键字集定义</a></li>--错%>
+                        <%--<li><a href="crawler_4.jsp" target="frame1">参数值设置</a></li>--%>
+                        <%--<li><a href="crawler_5.jsp" target="frame1">爬取图片展示</a></li>--%>
+                            <li><a href="crawl_news.jsp" target="frame1">新闻网页来源采集</a></li>
+                            <li><a href="crawl_media.jsp" target="frame1">社交媒体来源采集</a></li>
+                            <li><a href="crawl_ais.jsp" target="frame1">AIS传讯网站来源采集</a></li>
+                            <li><a href="../retrieval1.do" target="frame1">卫星图像网站来源采集</a></li>
                       </ul>
                   </li>
-                  <li><a>舰船目标识别<span class="fa fa-chevron-right"></span></a>
+                  <li class="active"><a> 聚焦网络爬虫 <span class="fa fa-chevron-right"></span></a>
+                      <ul class="nav child_menu"  style="display:block;">
+                          <!--<li><a href="crawler_1.jsp" target="frame1">新闻集导入</a></li>-->
+                          <li><a href="crawler_2.jsp" target="frame1">URL集导入</a></li>
+                          <li><a href="crawler_3.jsp" target="frame1">主题关键字集定义</a></li>
+                          <li><a href="crawler_4.jsp" target="frame1">参数值设置</a></li>
+                          <li><a href="crawler_5.jsp" target="frame1">爬取图片展示</a></li>
+                      </ul>
+                  </li>
+                  <li><a>多语多模态目标数据自动识别<span class="fa fa-chevron-right"></span></a>
                       <ul class="nav child_menu" style="display:block;">
-                        <li><a href="../retrieval.do" target="frame1">识别结果</a></li>
+                        <%--<li><a href="../retrieval.do" target="frame1">识别结果</a></li>--%>
+                            <li><a href="../retrieval.do" target="frame1">面向图像的舰船目标识别</a></li>
+                            <li><a href="../retrieval.do" target="frame1">面向自然场景图像的多语言文本识别</a></li>
+                      </ul>
+                  </li>
+
+                  <li><a>多源舰船数据融合<span class="fa fa-chevron-right"></span></a>
+                      <ul class="nav child_menu" style="display:block;">
+                          <%--<li><a href="../retrieval.do" target="frame1">识别结果</a></li>--%>
+                          <li><a href="../retrieval.do" target="frame1">时空数据融合下舰船目标深度关联和动态监测</a></li>
+                          <li><a href="../retrieval.do" target="frame1">多源舰船目标轨迹分析与预测</a></li>
                       </ul>
                   </li>
               </ul>

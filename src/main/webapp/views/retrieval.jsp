@@ -12,6 +12,7 @@
 <!-- Font Awesome -->
 <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 <link href="../css/style.css" rel="stylesheet">
+<script src="../js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
 
 <style type="text/css">
     body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
@@ -57,6 +58,19 @@
         height:100px;
     }
 </style>
+<script language='javascript' type='text/javascript'>
+    $(function () {
+        var tag = '<%=session.getAttribute("tag2")%>';
+        if(tag=="1"){
+            $('.state, #state2').delay(0).hide(0);
+            $('#state1').show();
+            setTimeout(function () {
+                $('.state, #state2').show();
+                $('#state1').delay(0).hide(0);
+            }, 4000);
+        }
+    })
+</script>
 <body>
 <div class="container">
     <div class="row">
@@ -74,22 +88,34 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3"></div>
 
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">
-                                K值
+                                识别状态及参数
                             </h3>
                         </div>
                         <div class="panel-body">
                             <div class="row">
-                                <input type="range" value="0">
+                                <label style="margin-left: 40px">当前识别状态:</label>
+                                <c:if test="${sessionScope.tag2 =='1'}"><label id="state1"><font color="red">识别中</font></label></c:if>
+                                <c:if test="${sessionScope.tag =='1'}"><label class="state"><font color="red">已识别</font></label></c:if>
+                                <c:if test="${sessionScope.tag !='1'}"><label class="state"><font color="red">识别中</font></label></c:if>
+                                <!-- <input type="text"  size="10px" value="0.875" disabled="disabled"/> -->
                             </div>
-                            <div class="row">                                
-                                <div class="col-md-1 col-md-offset-4">
-                                    <input type="text" style="margin-left: 40px;margin-top: 8px" size="2px" disabled="disabled" />
-                                </div>
+                            <div class="row">
+                                <label style="margin-left: 40px">图像类型:</label>
+                                <c:if test="${sessionScope.type =='ns'}"><label class="state">非船</label></c:if>
+                                <c:if test="${sessionScope.type == 'civil'}"><label class="state">民用船</label></c:if>
+                                <c:if test="${sessionScope.type == 'ws'}"><label class="state">军舰</label></c:if>
+                                <!-- <input type="text"  size="10px" value="0.875" disabled="disabled"/> -->
+                            </div>
+                            <div class="row">
+                                <label style="margin-left: 40px">预测准确率:</label>
+                                <label class="state">${sessionScope.rate}</label>
+                                <!-- <input type="text" size="10px" value="0.90485" disabled="disabled"/> -->
                             </div>
                         </div>
                     </div>
@@ -99,26 +125,14 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">
-                                结果
+                                识别图像
                             </h3>
                         </div>
                         <div class="panel-body">
-                            <div class="row">
-                                <label style="margin-left: 40px">类型:</label>
-                                <c:if test="${sessionScope.type =='ns'}"><label>风景(非船)</label></c:if>
-                                <c:if test="${sessionScope.type == 'civil'}"><label>民用船</label></c:if>
-                                <c:if test="${sessionScope.type == 'ws'}"><label>军舰</label></c:if>
-                                <!-- <input type="text"  size="10px" value="0.875" disabled="disabled"/> -->
-                            </div>
-                            <div class="row">
-                                <label style="margin-left: 40px">准确率:</label>
-                                <label>${sessionScope.rate}</label>
-                                <!-- <input type="text" size="10px" value="0.90485" disabled="disabled"/> -->
-                            </div>
+                            <c:if test="${sessionScope.tag =='1'}"> <img id="state2" src="${sessionScope.pageRecog}" class="img-responsive" width="200px"> </c:if>
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="row">
                 <div class="col-md-1">
@@ -126,14 +140,10 @@
                         <a href="../goFront.do"><button id="targetimage1" class="btn btn-primary" >前一张</button></a>
                     </div>
                 </div>
+                <div class="col-md-1"></div>
                 <div class="col-md-1">
                     <div class="text-center">
                         <a href="../goBack.do"><button id="targetimage2" class="btn btn-primary" >后一张</button></a>
-                    </div>
-                </div>
-                <div class="col-md-1">
-                    <div class="text-center">
-                        <a href="../recog.do"><button id="recog" class="btn btn-danger" >识别</button></a>
                     </div>
                 </div>
             </div>
